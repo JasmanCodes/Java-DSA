@@ -20,7 +20,6 @@ public class Array1 {
             System.out.println(arr[1]);
 
 
-//HII
 
         }
     }
