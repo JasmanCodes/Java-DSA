@@ -4,7 +4,7 @@ public class LinearSearch_1 {
     public static void main(String[] args) {
 
         int[] nums= {1,45,67,87,32,56,-5,-89};
-        int target= 56;
+        int target= 56 ;
 
         int ans= linearsearch(nums, target);
         System.out.println(ans);
