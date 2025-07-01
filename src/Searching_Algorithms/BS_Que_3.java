@@ -22,7 +22,7 @@ public class BS_Que_3 {
         if (target >= nums[0]) {
             return binarysearch(nums, target, 0, pivot - 1);
         }
-//
+//hiii
         return binarysearch(nums, target, pivot + 1, nums.length - 1);
     }
 
