@@ -72,4 +72,4 @@ return binarysearch(nums, target, pivot+1,nums.length-1);
         }
         return -1;
     }
-}////demo
+}
