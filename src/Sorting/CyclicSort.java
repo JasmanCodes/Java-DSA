@@ -37,6 +37,6 @@ public class CyclicSort {
 
         int temp= arr[first];
        arr [first]= arr[second];
-       arr[second]=temp;
+       arr[second ]=temp;
     }
 }
