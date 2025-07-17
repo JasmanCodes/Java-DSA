@@ -1,5 +1,5 @@
 package Bitwise_Operators;
-
+//magic number (amazon question)
 public class Bitwise_3 {
 
     public static void main(String[] args) {
