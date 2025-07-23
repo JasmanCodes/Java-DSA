@@ -4,7 +4,8 @@ public class Q1 {
 
     public static void main(String[] args) {
 
-        displayboth(5);
+        fun(5);
+
 
     }
 
@@ -37,6 +38,19 @@ public class Q1 {
         System.out.println(n);
         displayrev(n-1);
         System.out.println(n);
+
+
+    }
+    //concept
+    static void fun(int n){
+        if(n==0){
+            return;
+        }
+        System.out.println(n);
+       // fun(n--);///this will give stack overflow error
+        fun(--n);
+
+
 
 
     }
