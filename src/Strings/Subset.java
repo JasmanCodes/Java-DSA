@@ -3,7 +3,7 @@ package Strings;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
-
+// through iteration
 public class Subset {
 
     public static void main(String[] args) {
