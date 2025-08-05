@@ -7,7 +7,9 @@ public class Dice {
     public static void main(String[] args) {
 
         //dice("",4);
-        System.out.println(diceRet("",4));
+       // System.out.println(diceRet("",4));
+
+        System.out.println(diceFace("",7,9));
 
     }
 
@@ -36,6 +38,22 @@ public class Dice {
         for(int i=1; i<=6 && i<=target; i++){
 
             list.addAll(diceRet(p+i,target-i));
+        }
+        return list;
+    }
+/// custom faced die
+    static ArrayList<String> diceFace(String p, int target, int face){
+        if(target==0){
+
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        ArrayList<String> list = new ArrayList<>();
+
+        for(int i=1; i<= face && i<=target; i++){
+
+            list.addAll(diceFace(p+i,target-i, face));
         }
         return list;
     }
