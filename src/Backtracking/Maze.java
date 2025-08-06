@@ -11,7 +11,15 @@ public class Maze {
 
       //  path("",3,3);
       //  System.out.println(pathRet("",3,3));
-        System.out.println(pathRetDiagonal("",3,3));
+      //  System.out.println(pathRetDiagonal("",3,3));
+
+        boolean[][] board = {
+                {true,true,true},
+                {true,false,true},
+                {true,true,true}
+        };
+
+        pathRestriction("",board,0,0);
 
     }
 
@@ -85,4 +93,25 @@ public class Maze {
         }
         return list;
     }
+/// if there is a obstacle in the maze
+    static void pathRestriction(String p,boolean[][] maze, int r, int c) {
+        if (r == maze.length-1 && c == maze[0].length-1) {
+            System.out.println(p);
+            return;
+        }
+        if(!maze[r][c]){
+            return;
+
+        }
+        if (r < maze.length-1) {
+            pathRestriction(p + 'D',maze, r + 1, c);
+        }
+        if (c < maze.length-1) {
+            pathRestriction(p + 'R',maze,  r, c + 1);
+
+        }
     }
+
+
+
+}
