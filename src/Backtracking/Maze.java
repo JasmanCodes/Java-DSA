@@ -1,5 +1,5 @@
 package Backtracking;
-//doing with recursion
+//doing with recursion count of paths
 public class Maze {
 
     public static void main(String[] args) {
