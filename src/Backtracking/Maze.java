@@ -107,7 +107,7 @@ public class Maze {
             pathRestriction(p + 'D',maze, r + 1, c);
         }
         if (c < maze.length-1) {
-            pathRestriction(p + 'R',maze,  r, c + 1);
+            pathRestriction(p + 'R',maze,  r, c +  1);
 
         }
     }
