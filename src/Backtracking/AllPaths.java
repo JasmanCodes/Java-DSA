@@ -5,7 +5,7 @@ public class AllPaths {
     public static void main(String[] args) {
         boolean[][] board = {
                 {true,true,true},
-                {true,true,true},
+                {true,true ,true},
                 {true,true,true}
         };
 
@@ -21,7 +21,7 @@ public class AllPaths {
         if(!maze[r][c]){
             return;}
         // i am considering this block as my path
-        maze[r][c] =false;
+        maze[r][c] =false; //backtracking
 
         if (r < maze.length-1) {   //down
             allPath(p + 'D',maze, r + 1, c);
@@ -43,6 +43,6 @@ public class AllPaths {
         //this line is where the function is over
         // so before the function gets removed, also remove the changes that were made by the function
 
-        maze[r][c] =true;
+        maze[r][c] =true;// backtracing
     }
 }
