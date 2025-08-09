@@ -5,7 +5,7 @@ package Backtracking;
 import java.util.Arrays;
   
 //this is the problem with recursion that is why we need backtracking this is a never ending
-public class AllPaths {
+public class  AllPaths {
 
     public static void main(String[] args) {
         boolean[][] board = {
