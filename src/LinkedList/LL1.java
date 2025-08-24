@@ -88,6 +88,21 @@ public class  LL1 {
         return val;
 
     }
+// to find the node for a value
+    public Node find(int value){
+
+        Node node = head;
+        while(node!=null){
+
+            if(node.value == value){
+                return node;
+            }
+            node=node.next;
+
+        }
+        return null;
+
+    }
 
 
 
