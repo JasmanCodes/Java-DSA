@@ -59,6 +59,31 @@ public class  LL1 {
         size++;
     }
 
+    public int deleteLast() {
+        if(size <=1) {
+            return deleteFirst();
+        }
+
+        Node secondLast = get(size-2);
+        int val = tail.value;
+        tail = secondLast;
+        tail.next = null;
+        return val;
+    }
+
+
+//getting the index of the node to delete from the last
+    public Node get(int index){
+
+        Node node = head;
+        for(int i =0;i<index;i++){
+            node = node.next;
+        }
+        return node;
+
+    }
+
+// deleting the first element
     public int deleteFirst() {
         int val = head.value;
         head = head.next;
@@ -109,6 +134,9 @@ public class  LL1 {
        System.out.println(list.deleteFirst());
         list.insert(100,3);
 
+        list.display();
+
+        System.out.println(list.deleteLast());
         list.display();
 
     }
