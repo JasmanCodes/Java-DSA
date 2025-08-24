@@ -35,6 +35,29 @@ public class  LL1 {
         size++;
 
     }
+    //insert at a specific point
+    public void insert(int val, int index){
+        if(index==0){
+            insertFirst(val);
+            return;
+        }
+        if(index==size){
+            insertionLast(val);
+            return;
+        }
+
+        Node temp=head;
+        for (int i = 1; i < index ; i++) {
+            temp=temp.next;
+
+
+
+        }
+
+        Node node =new Node(val, temp.next);
+        temp.next=node;
+        size++;
+    }
 
     public void display() {
         Node temp = head;
@@ -69,8 +92,8 @@ public class  LL1 {
         list.insertFirst(5);
         list.insertFirst(6);
         list.insertFirst(7);
-
         list.insertionLast(99);
+        list.insert(100,3);
 
         list.display();
 
