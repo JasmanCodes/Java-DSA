@@ -9,7 +9,7 @@ public class  LL1 {
     public LL1(){
         this.size=0;
     }
-//insertion in singly linked list
+//insertion in singly linked list  fist position
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
@@ -20,6 +20,20 @@ public class  LL1 {
         }
 
         size+=1;
+    }
+//adding a node at last
+    public void insertionLast(int val) {
+
+        if(tail ==null){
+            insertFirst(val);
+            return;
+        }
+
+        Node node= new Node(val);
+        tail.next = node;
+        tail=node;
+        size++;
+
     }
 
     public void display() {
@@ -55,6 +69,8 @@ public class  LL1 {
         list.insertFirst(5);
         list.insertFirst(6);
         list.insertFirst(7);
+
+        list.insertionLast(99);
 
         list.display();
 
