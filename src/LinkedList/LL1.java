@@ -58,7 +58,7 @@ public class  LL1 {
         temp.next=node;
         size++;
     }
-
+//deleting at last
     public int deleteLast() {
         if(size <=1) {
             return deleteFirst();
@@ -70,6 +70,25 @@ public class  LL1 {
         tail.next = null;
         return val;
     }
+
+// deleting at a point
+    public int delete(int index){
+        if(index==0){
+            return deleteFirst();
+        }
+        if(index == size - 1){
+            return deleteLast();
+        }
+
+        Node prev = get(index-1);
+        int val = prev.next.value;
+
+        prev.next = prev.next.next;
+
+        return val;
+
+    }
+
 
 
 //getting the index of the node to delete from the last
@@ -137,6 +156,8 @@ public class  LL1 {
         list.display();
 
         System.out.println(list.deleteLast());
+        list.display();
+        System.out.println(list.delete(2));
         list.display();
 
     }
