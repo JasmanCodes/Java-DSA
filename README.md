@@ -11,7 +11,7 @@ Sorting/ – Sorting algorithms like Bubble, Merge, Quick, etc.
 
 
 🔧 Platforms Used
-[📘 LeetCode Profile](https://leetcode.com/profile/)  
+[🔗 LeetCode Profile](https://leetcode.com/u/Jasman_12/)
 
 ❓ Why This Repo?
 To:Track my consistency, Revisit and revise logic easily, Share learnings and solutions with others preparing for interviews
